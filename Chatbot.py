@@ -6,10 +6,13 @@ import os
 load_dotenv()
 openai_api_key = os.getenv("OPENAI_API_KEY")
 
-with st.sidebar:
-    openai_api_key = st.text_input("OpenAI API Key", key=openai_api_key, type="password")
-    "[Get an OpenAI API key](https://platform.openai.com/account/api-keys)"
-    "[View the source code](https://github.com/su-re-sh-75/chatbot-c5i.git)"
+# with st.sidebar:
+#     if not openai_api_key:
+#         openai_api_key = st.text_input("API Key", key="chatbot_api_key", type="password")
+#     else:
+#         openai_api_key = st.text_input("API Key", key="chatbot_api_key", type="password")
+#     "[Get an OpenAI API key](https://platform.openai.com/account/api-keys)"
+#     "[View the source code](https://github.com/su-re-sh-75/chatbot-c5i.git)"
 
 st.title("💬 Chatbot")
 st.caption("🚀 A Streamlit chatbot powered by OpenAI")
